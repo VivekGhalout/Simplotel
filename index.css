@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 100px;
+}
+
+.home-div {
+  position: relative;
+}
+
+.main-img-div {
+  position: absolute;
+}
+.main-text {
+  width: 35%;
+  font-family: sans-serif;
+  padding: 10px 40px;
+  position: absolute;
+  transform: translate(15%, 120%);
+  color: #ffff;
+  background: #d47e7a;
+  opacity: 0.8;
+}
+.main-text h1 {
+  font-size: 40px;
+  opacity: 1;
+}
+
+.main-text p {
+  margin-top: -20px;
+  font-size: 22px;
+  opacity: 1;
+}
+
+.main-bg {
+  width: 100%;
+  height: 1100px;
+  background-image: linear-gradient(to right, #ff6ebd, #ffd760);
+}
+
+.sec-div {
+  width: 100%;
+  padding-bottom: 100px;
+  margin-top: 10px;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  background-image: linear-gradient(to right, #ff6ebd, #ffd760);
+}
+
+.card-div {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10%;
+  margin-top: 60px;
+}
+
+.card {
+  text-align: center;
+  color: black;
+  background-color: #ffff;
+  border-radius: 0px 50px 0px 50px;
+  padding: 15px;
+}
+
+.card img {
+  border-radius: 0px 50px 0px 0px;
+  aspect-ratio: 1/1;
+}
+
+.sec-div > div {
+  margin-top: 50px;
+}
+.sec-div > div > button {
+  padding: 10px 40px;
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 820px) {
+  nav ul {
+    padding: 0px 50px;
+  }
+
+  .main-text {
+    width: 50%;
+    padding: 10px 30px;
+    position: absolute;
+    transform: translate(15%, 40%);
+  }
+
+  .main-bg {
+    width: 100%;
+    height: 650px;
+  }
+
+  .card-div {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sec-div > div {
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+  }
+
+  nav ul li {
+    font-size: 10px;
+  }
+
+  .main-text {
+    width: 60%;
+    font-family: sans-serif;
+    padding: 5px 20px;
+    position: absolute;
+    transform: translate(15%, 40%);
+  }
+  .main-text h1 {
+    font-size: 20px;
+    opacity: 1;
+  }
+  
+  .main-text p {
+    margin-top: -10px;
+    font-size: 12px;
+  }
+  
+  .main-bg {
+    height: 320px;
+  }
+
+  .card-div {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2%;
+    margin-top: -20px;
+  }
+}
